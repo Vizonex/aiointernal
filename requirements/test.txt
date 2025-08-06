@@ -1,0 +1,4 @@
+pytest>=8.4.1
+# pytest diffrent event loops
+anyio>=4.10.0
+
