@@ -40,7 +40,7 @@ class AioDuktapeContext(HeapThread):
         self._context = DuktapeContext()
 
     # sync wrapper helps wrap functions we would like for this 
-    # thread to use, and keep the context in it's away 
+    # thread to use, and keep the context away 
     # from our main eventloop's thread. 
 
     @sync
@@ -86,4 +86,5 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
 
